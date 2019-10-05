@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+/*flex布局的基础设置，将一行看作12列*/
+.row {
+    display: flex;
+    /*四个内边距*/
+    padding: 5px 5px 5px 5px;
+    /*允许换行，这样用一个row套若干个column即可*/
+    flex-wrap: wrap;
+}
+
+/*父元素等宽*/
+.col-12 {
+    flex: 0 0 99%;
+}
+
+.col-10 {
+    flex: 0 0 83%;
+}
+
+/*父元素2/3*/
+.col-8 {
+    flex: 0 0 66%;
+}
+
+/*父元素一半*/
+.col-6 {
+    flex: 0 0 49%;
+}
+
+/*父元素1/3*/
+.col-4 {
+    flex: 0 0 33%;
+}
+
+/*父元素1/4*/
+.col-3 {
+    flex: 0 0 24%;
+}
+
+/*父元素1/6*/
+.col-2 {
+    flex: 0 0 16.6%;
+}
+
+/*超链接样式，颜色，无下划线*/
+a, a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+/*伪类样式，鼠标悬停颜色*/
+a:hover {
+    color: #fff;
+}
+
+#top {
+    height: 50px;
+    background: linear-gradient(to bottom, rgb(246, 246, 246), rgb(246, 246, 246));
+    color: #97939d;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 50px;
+    border-bottom: 1px solid rgb(176, 214, 246);
+}
+
+#top ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#top ul li {
+    border-right: 1px solid rgb(176, 214, 246);
+    flex: 0 0 60%;
+}
+
+.avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+footer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px dashed #ddd;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    padding: auto 10px auto 10px;
+}
+
+footer ul li {
+    font-size: 12px;
+    color: rgb(36, 81, 171);
+    margin-right: 10px;
+}
+
+#search {
+    height: 80px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    flex: 0 0 40%;
+    height: 35px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-left: 50px;
+}
+
+.search-btn {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(155, 154, 143);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn img {
+    width: 50%;
+    height: 50%;
+}
